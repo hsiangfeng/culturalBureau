@@ -1,0 +1,273 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+img{
+    width: 100%;
+    height: auto;
+}
+*{
+    box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box; 
+    }
+/*layout*/
+.wrap{
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.wrap-fluid{
+    width: 100%;
+}
+.header{
+    background-color: rgba(77, 196, 184, 1);
+    height: 100px;
+}
+.logo{
+    float: left;
+    margin: 32px 0 0 50px;
+    color:#fff;
+    font-size: 40px;
+    font-weight: bold;
+}
+.topmain{
+    float: right;
+}
+.topmain ul li{
+    float: left;
+    margin: 28px 15px 0 10px;
+}
+.topmain a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 45px;
+    width: 100px;
+    color:#fff;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+.topmain a:hover{
+    background-color: #fff;
+    color: rgb(77, 196, 184);
+}
+/*banner*/
+.banner{
+    position: relative;
+}
+.slider{
+    background-image: url('https://hsiangfeng.github.io/culturalBureau/img/jordan-mcgee-1169862-unsplash.jpg');
+    background-position: center center;
+    background-size: cover;
+    height: 490px !important;
+}
+.slider-main{
+    display: flex;
+    justify-content: center;
+    transform: translateY(-45%);
+    margin-bottom: 100px;
+    z-index: 10;
+}
+.slider-main a{
+    display: flex;
+    height: 260px;
+    width: 260px;
+    background-color: rgba(77, 196, 184 , 0.6);
+    color:#fff;
+    font-size: 30px;
+    justify-content: center;
+    align-items: center;
+    writing-mode: vertical-rl;
+    text-decoration: none;
+    letter-spacing:10px;
+    box-shadow: 5px 5px 12px gray;
+}
+.slider-main a:hover{
+    background-color: rgba(77, 196, 184 , 1);
+    transition: all 0.3s;
+}
+.slider-bg:nth-child(1){
+    background-image: url('https://hsiangfeng.github.io/culturalBureau/img/KFA_2018.12_eDM_2.jpg');
+    background-position: center center;
+    background-size: cover;
+    
+}
+.slider-bg:nth-child(2){
+    background-image: url('https://hsiangfeng.github.io/culturalBureau/img/111_11.jpg');
+    background-position: center center;
+    background-size: cover;
+}
+.slider-bg:nth-child(3){
+    background-image: url('https://hsiangfeng.github.io/culturalBureau/img/PIC1071108_3.jpg');
+    background-position: center center;
+    background-size: cover;
+}
+/*movie*/
+.movie{
+    background-color: rgba(77, 196, 184 , 1);
+    height: 400px;
+    margin-bottom: 150px;
+}
+.movie-img{
+    background-image: url('https://hsiangfeng.github.io/culturalBureau/img/KFA_2018.12_eDM_2.jpg');
+    background-position: center center;
+    background-size: cover;
+    height: 506px;
+    width: 360px;
+    box-shadow: 5px 5px 12px gray;
+}
+.movie-content{
+    position: relative;
+    display: flex;
+    top: -15%;
+}
+.movie-data{
+    position: absolute;
+}
+.movie .movie-content h2{
+    writing-mode: vertical-rl;
+    position: absolute;
+    right: 15%;
+    font-size: 32px;
+    color:#3f5d45;
+}
+.movie .movie-content p{
+    writing-mode: vertical-rl;
+    line-height: 36px;
+    height: 350px;
+    position: absolute;
+    right: 37%;
+    top: 20%;
+    color:#fff;
+}
+
+/* library */
+.library{
+    background-color: rgba(77, 196, 184 , 1);
+    height: 400px;
+    margin-bottom: 150px;
+}
+.library-img{
+    background-image: url('https://hsiangfeng.github.io/culturalBureau/img/PIC1071123_1.jpg');
+    background-position: center center;
+    background-size: cover;
+    height: 506px;
+    width: 360px;
+    position: relative;
+    left: 60%;
+    box-shadow: 5px 5px 12px gray;
+}
+.library-content{
+    position: relative;
+    display: flex;
+    top: -15%;
+}
+.library-data{
+    position: absolute;
+}
+.library .library-content h2{
+    writing-mode: vertical-rl;
+    position: absolute;
+    right: 50%;
+    font-size: 32px;
+    color:#3f5d45;
+    writing-mode: tb-rl;
+    height: 363px;
+}
+.library .library-content p{
+    writing-mode: vertical-rl;
+    line-height: 36px;
+    height: 350px;
+    position: absolute;
+    left: 17%;
+    top: 20%;
+    color:#fff;
+}
+
+/* artist-h2 */
+.artist-h2{
+    font-size: 40px;
+    color:#3f5d45;
+    writing-mode: vertical-rl;
+    position: relative;
+    left: 50%;
+    height: 453px;
+}
+/*info*/
+.info-body{
+    position: relative;
+    display: inline-block;
+    width: 320px;
+    margin: 5% 2.1%;
+}
+.info-body h3{
+    position: absolute;
+    top: 0%;
+    left: 5%;
+    display: flex;
+    align-items: center;
+    letter-spacing: 6px;
+    justify-content: center;
+    writing-mode: vertical-lr;
+    background-color: #3f5d45;
+    width: 45px;
+    height: 123px;
+    color: #fff;
+    font-weight: bold;
+}
+footer p{
+    background-color: rgba(77, 196, 184, 1);
+    color: #fff;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100px;
+}
